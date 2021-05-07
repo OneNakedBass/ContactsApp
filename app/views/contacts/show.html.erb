@@ -1,0 +1,12 @@
+<div class="bg-dark text-white p-5 rounded-lg m-3">
+  <h1 class="display-4"><%= @contact.first_name %> <%= @contact.last_name %></h1>
+  <p class="lead">  <%= @contact.company %> </p>
+  <p class="lead'"> <%= @contact.phone %> </p>
+  <p class="lead"> <%= @contact.email %> </p>
+
+  <%= link_to 'Edit', edit_contact_path(@contact), class:"btn btn-secondary" %> 
+<%= link_to 'Back', contacts_path, class:"btn btn-secondary" %>
+</div>
+
+
+
